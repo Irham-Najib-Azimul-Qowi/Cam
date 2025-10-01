@@ -10,7 +10,6 @@ export default function handler(req, res) {
     res.setHeader("Content-Type", "image/jpeg");
     res.send(global.lastImage);
   } else {
-    // Tampilan utama
     res.setHeader("Content-Type", "text/html");
     res.end(`
       <html>
